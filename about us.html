@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <h1 class="logo">Old&Days</h1>
+        <ul class="nav-link">
+            <li class="menus"><a href="index.html">Home</a></li>
+            <li class="menus"><a href="accommodation.html">Accommodation</a></li>
+            <li class="menus"><a href="ACTIVITY.HTML">Activity</a></li>
+            <li class="menus"><a href="about us.html">About Us</a></li>
+            <li class="ctn"><a href="reference.html">Reference</a></li>
+        </ul> 
+       
+        <img src="./imgss/menu-button.png" alt="" class="menu-btn">
+    </nav>
+    
+    <header>
+        <div class="header-content"> 
+            <h2>Explore The  Wonderful World</h2>
+            <div class="line"></div>
+            <h1>OLD & DAYS</h1>
+            <a href="#" class="ctn">Know More</a>
+        </div>
+    </header>
+
+    <!-- accomodation -->
+    <section class="rooms">
+        <div class="title">
+            <h1>What We Offer</h1>
+            <div class="line"></div>
+        </div>
+        <div class='part'>
+            <div class="col">
+                <img src="./imgss/2dinosaurXXX.jpg" alt="2-dinosaurs">
+                <h4>Old-Time World</h4>
+                <p>Meture VR technology for you to have a new life in the dinosaur world. Let's have a new start! </p>
+                <a href="ACTIVITY.HTML" class="ctn">Know More</a>
+            </div>
+            <div class="col">
+                <img src="./imgss/HOUSE keeperXXX.jpg" alt="housekeeper">
+                <h4>All Day Housekeeper</h4>
+                <p>Each room has a private butler service for 24 hours, and free shuttle service. Our aim is for you. </p>
+                <a href="accommodation.html" class="ctn">Know More</a>
+            </div>
+        </div>
+    </section> 
+       
+    <!-- message -->
+    <section class="table">
+        <div>
+            <p>Please write your comments :</p>
+            <label><span>Name：</span><input type="text" id="name" placeholder="Input your name here" required="" /></label><br>
+            <label><span>Email：</span><input type="email" id="email" /></label>
+            <label><span>Phone：</span><input type="tel"  required="" id="phone" /></label><br>
+            <label class="content"><span>Comments：</span><input type="text" id="com" placeholder="Any comments or questions" required="" /></label>
+            <input type="button" class="submit" value="SUBMIT">
+        </div>
+    </section>
+   <!-- footer -->
+    <section class="footer">
+        <p>888 SUN Avenue, SH 1113002, ShangHai, China <br>| TEL: +86 1234567 | <br> Email: Llove@h520.com <br></p>
+        <p> <br><br> 2021 Most Popular Resort</p>
+    </section>
+   
+   <script>
+        const menuBtn=document.querySelector('.menu-btn')
+        const navlink=document.querySelector('.nav-link')
+        menuBtn.addEventListener('click',()=>{
+            navlink.classList.toggle('mobile-menu')
+        })
+    </script>
+
+    <script>
+        var name = document.getElementById("name");
+	var email = document.getElementById("email");
+	var phone = document.getElementById("phone");
+	var com = document.getElementById("com");
+	var submit = document.getElementsByClassName("submit")[0];
+	submit.onclick = function(){
+		var count = 0;
+		if(name.value != ""){
+			count++;
+		}
+		if(email.value != ""){
+			count++;
+		}
+		if(phone.value != ""){
+			count++;
+		}
+		if(com.value != ""){
+			count++;
+		}
+		if(count != 4){
+			alert("Please complete the information！");
+		}else{
+			alert("Message Success！");
+		}
+	};
+    </script>
+
+</body>
+</html>

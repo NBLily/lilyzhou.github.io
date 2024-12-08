@@ -1,0 +1,516 @@
+@import url(https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;700);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 700;
+}
+
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+body, html {
+    overflow-x: hidden;
+}
+/* Navbar */
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    padding:20px;
+    color:rgb(196, 111, 111);
+    background-color: rgb(223, 206, 206);
+    position: fixed ;
+    
+   
+}
+.navbar h1{
+    font-style: italic;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2em;
+    
+}
+.nav-link{
+    display: flex;
+    align-items: center;
+} 
+
+.nav-link li{
+    margin: 0 30px;
+    display: inline-block;
+
+}
+
+header{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-size: cover;
+    background-position: bottom;
+    align-items: flex-end;
+    justify-content:center ;
+    background-image:url('./imgss/度假村大门.jpg') ;
+}
+.header-content{
+    margin-bottom: 150px;
+    color: rgb(230, 207, 207);
+    text-align: center;
+} 
+.header-content h2{
+    font-size: 5vmin;
+    font-family: monospace;
+}
+.line{
+    width: 150px;
+    height: 4px;
+    margin: 10px auto;
+    border-radius: 5px;
+    background:rgb(240, 140, 140);
+}
+.header-content h1{
+    font-size: 7vmin;
+    margin-top: 52px;
+    margin-bottom: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.ctn{
+    
+    border-radius: 30px;
+    color: whitesmoke;
+    padding: 8px 15px;
+    background:rgb(240, 140, 140);
+}
+.menu-btn{
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    display: none;
+    cursor: pointer;
+    position: absolute;
+}
+
+
+
+/* accomodation */
+section{
+    width: 80%;
+    margin: 80px auto;
+}
+.title {
+    text-align:center ;
+    font-size: 2em;
+    color: rgb(53, 44, 180);
+    font-family: unset;
+}
+.part{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 60;
+    justify-content: space-between;
+    background: rgb(138, 70, 75);
+}
+.part .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.rooms .part{
+    margin-top: 50px;
+}
+
+h4{
+    font-size: 3vmin;
+    color: rgb(29, 51, 35);
+    margin: 20px auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+p{
+    color: rgb(209, 206, 206);
+    padding: 0px 30px;
+    max-height: 30px;
+    font-style: italic;
+}
+.rooms .ctn{
+    margin-top: 30px;
+}
+
+.facility{
+    width: 100%;
+    height: 100vh;
+    background-image: url('./imgss/05.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+.facility-text{
+    width: 60%;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(156, 108, 69);
+}
+
+.facility-text h1{
+    font-size: 3em;
+    margin: 50px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.facility-text p{
+    color: rgb(245, 227, 227);
+    font-family:Arial, Helvetica, sans-serif;
+}
+.facility-text .ctn{
+    margin-top: 50px;
+}
+.content-col{
+    width: 40%;
+}
+.image-col{
+    width: 60%;
+}
+.tours .image-activity{
+    display: flex;
+    flex-wrap:wrap;
+}
+.image-activity img{
+    max-width: 300px;
+    margin: 10px;
+}
+.content-col h1{
+    font-size: 3em;
+    color: rgb(41, 53, 38);
+    font-family:'Times New Roman', Times, serif ;
+}
+
+.content-col p{
+    padding: 0;
+    margin: 30px auto;
+    font-family:sans-serif;
+}
+.content-col .ctn{
+    margin-left: -100px;
+}
+
+/* footer */
+.footer{
+    width: 100%;
+    height: 220px;
+    padding: 20px 80px;
+    margin: 0;
+    background-color: dimgray;
+    text-align: center;
+}
+.footer p{
+    color: rgb(253, 255, 240);
+    margin: 20px auto;
+}
+
+
+.w {
+	width: 1000px;
+    height: 1200px;
+	margin: 0 auto;
+	overflow: hidden;
+    background-color: thistle;
+  
+}
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+
+.service {
+	height: 1000px;
+	padding-top: 30px
+}
+
+.title p {
+	font-size: 1em;
+	text-align: center;
+	font-weight: 700;
+    color: rgb(38, 51, 112);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.title h5 {
+	font-size: 22px;
+	text-align: center;
+	color: rgb(80, 70, 70);
+	font-weight: normal;
+    font-family: 'Times New Roman', Times, serif;
+	margin: 20px 0 50px 0;
+}
+.title .one {
+	margin: 0 auto;
+	font-size: 12px;
+	font-weight:bolder;
+	color: #973939;
+	width: 1000px;
+	text-align: center;
+}
+.nav {
+	height: 50px;
+	background-color: rgb(240, 140, 140)37;
+	margin: 40px 0 50px 0;
+}
+.nav p {
+	text-align: center;
+	font-size: 28px;
+	line-height: 50px;
+}
+.room-t, .room-b {
+	height: 400px;
+    position: relative;
+   
+}
+.room-l, .roon-r {
+	width: 470px;
+    align-items: center;
+}
+.room-t img {
+	width: 470px;
+	height: 300px;
+}
+.room-t span {
+	display: flex;
+	width: 200px;
+	height: 50px;
+	text-align:center;
+	margin: 0 auto;
+	line-height: 60px;
+	font-size: 26px;
+    font-family: Arial, Helvetica, sans-serif;
+	color: rgb(43, 49, 77);
+    border-radius: 10px;
+	background-color:rgb(240, 140, 140);
+    position: relative;
+}
+.room-b {
+	margin-top: 30px;
+}
+
+/* message */
+.table {
+	height: 330px;
+	width: 1200px;
+	margin: 50px auto 0;
+}
+.table p {
+	font-size: 20px;
+	color: rgb(207, 92, 92);
+	margin-bottom: 30px;
+    align-content: center;
+}
+.table label {
+	padding-left: 30px;
+	width: auto;
+	font-size: 16px;
+	
+}
+.table label span{
+	display: inline-block;
+	width: 120px;
+	text-align: right;
+    
+}
+.table input {
+	width: 300px;
+	height: 35px;
+	margin: 10px 10px 10px 0;
+	padding: 0 0 0 8px;
+}
+.content input {
+	height: 70px;
+	width: 960px;
+}
+.table .submit {
+	width: 200px;
+	margin-left: 150px;
+	background-color:  #eb617ff1;
+	border: 0;
+    align-content: flex-start;
+    border-radius: 10px;
+	color: #fff;
+}
+.table .submit:active{
+    color: tomato;
+    background: whitesmoke;
+}
+
+/* footer-room */
+.footer-room{
+    width: 100%;
+    height: 220px;
+    padding: 20px 80px;
+    margin-bottom: 0%;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(87, 59, 59);
+    text-align: center;
+}
+.footer-room p{
+    color: rgb(253, 255, 240);
+    margin: 20px auto;
+}
+
+/* reference */
+.tit{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: normal;
+    color: darkblue;
+    
+    
+}
+.refer h5{
+    font-family: monospace;
+    font-size: 2vmin;
+    color: rgb(41, 53, 38);
+    background-color: rgb(189, 135, 138);
+    
+    text-decoration-line: underline;
+}
+
+/* mobile phone screen */
+@media only screen and (max-width:850px){
+    .navbar{
+        padding: 0;
+    }
+    .logo{
+        top: 30px;
+        left: 30px;
+        position: absolute;
+        
+    }
+    .menu-btn{
+        display: block;
+    }
+    .nav-link{
+        width: 60%;
+        height: 70vh;
+        margin-top: -1000px;
+        background:slateblue;
+        flex-direction: column;
+        justify-content: center;
+        transition: all 0.6s ease-out;
+    }
+
+    .mobile-menu{
+        margin-top: 0px;
+       
+    }
+    .nav-link li{
+        margin: 30px auto;
+    }
+    /* accomodation */
+    .part{
+        flex-direction: column;
+    }
+    .part .col{
+        margin: 20px auto;
+    }
+    .col img{
+        max-width: 90%;
+    }
+    .content-col .ctn{
+        margin-top: 90px;
+    }
+
+    /* facility */
+    .facility-text{
+        width: 100%;
+    }
+    .tours .col{
+        width: 100%;
+    }
+    .image-activity{
+        justify-content: center;
+        align-items: center;
+    }
+    .image-activity img{
+        width: 90%;
+    }
+    
+    /* ROOMS */
+    .title{
+        width: 100%;
+    }
+    .title .one{
+        width: 100%;
+    
+    }
+    .w{
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    /* table */
+	.table {
+		height: auto;
+		width: 1200px;
+		margin: 50px auto 0;
+	}
+	.table label {
+		display: block;
+		width: auto;
+		font-size: 16px;
+		color: #666;
+	}
+	
+	.table label input{
+		width: 18%;
+		border: 1ps solid #666666;
+	}
+	.table .submit {
+		width: 100px;
+		margin-left: 130px;
+		background-color:  #eb617ff1;
+		border: 0;
+	    align-content: flex-start;
+	    border-radius: 10px;
+		color: #fff;
+	}
+	.content input {
+		height: 70px;
+		width: 960px;
+		vertical-align: text-top;
+		margin-top: -1px;
+	}
+
+    
+}
+
+img{
+    transition: transform 0.3s ease-in;
+}
+img:hover{
+    transform: scale(1.2);
+}
+.ctn:hover{
+    background-color:whitesmoke;
+    color: tomato;
+}
+li:hover{
+    color: tomato;
+}
+
+
+
+

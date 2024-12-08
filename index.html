@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <h1 class="logo">Old&Days</h1>
+        <ul class="nav-link">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="accommodation.html">Accommodation</a></li>
+            <li><a href="ACTIVITY.HTML">Activity</a></li>
+            <li><a href="about us.html">About Us</a></li>
+            <li class="ctn"><a href="reference.html">Reference</a></li>
+        </ul> 
+       
+        <img src="./imgss/menu-button.png" alt="" class="menu-btn">
+    </nav>
+    
+    <header>
+        <div class="header-content"> 
+            <h2>Explore The  Wonderful World</h2>
+            <div class="line"></div>
+            <h1>OLD & DAYS</h1>
+            <a href="ACTIVITY.HTML" class="ctn">Know More</a>
+        </div>
+    </header>
+
+    <!-- accomodation -->
+    <section class="rooms">
+        <div class="title">
+            <h1>Wonderful Areas</h1>
+            <div class="line"></div>
+        </div>
+        <div class='part'>
+            <div class="col">
+                <img src="./imgss/04.jpg" alt="dinner area">
+                <h4>Enjoy Your Meal</h4>
+                <p>An outdoor area for you to enjoy both the beautiful sights and tasty foods. Fall in love with the moment </p>
+                <a href="about us.html" class="ctn">Know More</a>
+            </div>
+            <div class="col">
+                <img src="./imgss/03.jpg" alt="swimming area">
+                <h4>Relax Your Mind</h4>
+                <p>Super large outdoor pool with professional lifeguards patrol. Afternoon tea service. </p>
+                <a href="about us.html" class="ctn">Know More</a>
+            </div>
+        </div>
+    </section> 
+        <!-- facility -->
+    <section class="facility">
+        <div class="facility-text">
+            <h1>ROOMS AND FACILITIES</h1>
+            <P>Go to a new world that combine leisure and adventure.xxxxxxxxxxxxxxxxx </P>
+            <a href="accommodation.html" class="ctn">Know More</a>
+        </div>
+    </section>
+
+    <section class="tours">
+        <div class="part">
+            <div class="col content-col">
+                <h1>SHOW MORE THINGS</h1>
+                <p>The most exciting VR Experinece with most advanced devices. 24-hours housekeeper service.</p>
+                <a href="ACTIVITY.HTML" class="ctn">Know More</a>
+            </div>
+            <div class="col image-col">
+                <div class="image-activity">
+                    <img src="./imgss/a1.png" alt="garden">
+                    <img src="./imgss/a02.jpg" alt="sunbath">
+                    <img src="./imgss/a03.jpg" alt="bar">
+                    <img src="./imgss/a04.jpg" alt="VR-man">
+                </div>
+            </div>
+        </div>
+    </section>
+   <!-- footer -->
+    <section class="footer">
+        <p>888 SUN Avenue, SH 1113002, ShangHai, China <br>| TEL: +86 1234567 | <br> Email: Llove@h520.com <br></p>
+        <p> <br><br> 2021 Most Popular Resort</p>
+    </section>
+   
+   <script>
+        const menuBtn=document.querySelector('.menu-btn')
+        const navlink=document.querySelector('.nav-link')
+        menuBtn.addEventListener('click',()=>{
+            navlink.classList.toggle('mobile-menu')
+        })
+    </script>
+
+
+</body>
+</html>

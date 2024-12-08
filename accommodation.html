@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+    </head>
+    <body>
+        <!-- NAVBAR -->
+        <nav class="navbar">
+            <h1 class="logo">Old&Days</h1>
+            <ul class="nav-link">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="accommodation.html">Accommodation</a></li>
+                <li><a href="ACTIVITY.HTML">Activity</a></li>
+                <li><a href="about us.html">About Us</a></li>
+                <li class="ctn"><a href="reference.html">Reference</a></li>
+            </ul> 
+           
+            <img src="./imgss/menu-button.png" alt="" class="menu-btn">
+        </nav>
+        
+        <header>
+            <div class="header-content"> 
+                <h2>Explore The  Wonderful World</h2>
+                <div class="line"></div>
+                <h1>OLD & DAYS</h1>
+                <a href="#" class="ctn">Know More</a>
+            </div>
+        </header>
+    
+       <!-- Rooms -->
+       <div section="service">
+            <div class="title">
+                <p>MORE ROOMS</p>
+                <h5>----------FOR A GOOD DREAM----------</h5>
+                <p class="one">Complete rooms, noble and comfortable. With imported sanitary ware, exquisite home, high-grade color TV, satellite TV, VR facilities, independent adjustment thermostat and room tall bar, etc., is your ideal home.</p>
+            </div>
+		
+            <div class="room w">
+                <div class="room-t">
+                    <div class="room-l fl">
+                        <a href="#"> <img src="./imgss/豪华大床房01.jpeg" alt="deluxe room"><span>Deluxe Room</span></a>
+                    </div>
+                    <div class="room-r fr">
+                        <a href="#"><img src="imgss/家庭套房1.jpeg" alt="family room"><span>Family  Room </span></a>
+                        
+                    </div>
+
+                </div>
+                <div class="room-b">
+                    <div class="room-t">
+                        <div class="room-l fl">
+                            <a href="#"><img src="imgss/特色大床房.jpeg" alt="standard room"><span>Standard Room</span> </a>
+                        </div>
+                        <div class="room-r fr">
+                            <a href="#"> <img src="imgss/pexels-photo-双床房jpeg.jpeg" alt="Popular room"><span>Popular Room</span></a>
+                        </div>
+                    </div>
+
+                    <div class="room-t">
+                        <div class="room-l fl">
+                            <a href="#"> <img src="imgss/pexels-photo-总统套房.jpeg" alt="dream room"><span>Dream Room</span></a>
+                        </div>
+                        <div class="room-r fr">
+                            <a href="#"><img src="imgss/pexels-photo-儿童床.jpeg" alt="Lovely room"><span>Lovely  Room</span> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		</section>
+        <!-- footer -->
+        <section class="footer-room">
+            <p>888 SUN Avenue, SH 1113002, ShangHai, China <br> <br>| TEL: +86 1234567 | <br> <br> Llove@h520.com </p>
+            
+        </section>
+        
+	</div>
+
+       <script>
+            const menuBtn=document.querySelector('.menu-btn')
+            const navlink=document.querySelector('.nav-link')
+            menuBtn.addEventListener('click',()=>{
+                navlink.classList.toggle('mobile-menu')
+            })
+        </script>
+    
+</body>
+</html>

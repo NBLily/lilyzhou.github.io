@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <h1 class="logo">Old&Days</h1>
+        <ul class="nav-link">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="accommodation.html">Accommodation</a></li>
+            <li><a href="ACTIVITY.HTML">Activity</a></li>
+            <li><a href="about us.html">About Us</a></li>
+            <li class="ctn"><a href="reference.html">Reference</a></li>
+        </ul> 
+        <img src="./imgss/menu-button.png" alt="" class="menu-btn">
+    </nav>
+    
+    <header>
+        <div class="header-content"> 
+            <h2>Explore The  Wonderful World</h2>
+            <div class="line"></div>
+            <h1>OLD & DAYS</h1>
+            <a href="#" class="ctn">Know More</a>
+        </div>
+    </header>
+    
+    <section class="tours">
+        <div class="part">
+            <div class="col content-col">
+                <h1>Excellent Activities</h1>
+                <p>The most exciting VR Experinece.  24-hours housekeeper service. <br> Large outdoor swimming pool. The mysterious garden</p>
+                <a href="ACTIVITY.HTML" class="ctn">Know More</a>
+            </div>
+            <div class="col image-col">
+                <div class="image-activity">
+                    <img src="./imgss/a1.png" alt="garden">
+                    <img src="./imgss/a02.jpg" alt="sunbath">
+                    <img src="./imgss/a03.jpg" alt="bar">
+                    <img src="./imgss/a04.jpg" alt="VR-man">
+                </div>
+            </div>
+        </div>
+    </section>
+   <!-- footer -->
+    <section class="footer">
+        <p>888 SUN Avenue, SH 1113002, ShangHai, China <br>| TEL: +86 1234567 | <br> Email: Llove@h520.com <br></p>
+        <p> <br><br> 2021 Most Popular Resort</p>
+    </section>
+
+    <!-- menu function -->
+    <script>
+        const menuBtn=document.querySelector('.menu-btn')
+        const navlink=document.querySelector('.nav-link')
+        menuBtn.addEventListener('click',()=>{
+            navlink.classList.toggle('mobile-menu')
+        })
+    </script>
+    <!-- /* running pictures */ -->
+    <script>
+        setInterval(Broadcast,2000);
+	var img_index = 0;
+	function Broadcast(){
+		var img_arr = ["./imgss/VR02.jpg","./imgss/bar.jpg","./imgss/breakfast01.jpg","./imgss/garden01.jpg"];
+		if(img_index > img_arr.length-1){
+			img_index = 0;
+		}
+		window.document.getElementsByTagName("header")[0].style.backgroundImage = "url("+img_arr[img_index]+")";
+		img_index++; 
+	}
+    </script>
