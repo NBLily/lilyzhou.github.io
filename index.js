@@ -3,7 +3,7 @@ window.onload = function(){
 	setInterval(Broadcast,2000);
 	var img_index = 0;
 	function Broadcast(){
-		var img_arr = ["./imgss/度假村大门.jpg","./imgss/bar.jpg","./imgss/VRbac.jpg","./imgss/BBS.jpg"];
+		var img_arr = ["./度假村大门.jpg","./imgss/bar.jpg","./imgss/VRbac.jpg","./imgss/BBS.jpg"];
 		if(img_index > img_arr.length-1){
 			img_index = 0;
 		}
