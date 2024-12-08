@@ -58,7 +58,7 @@ header{
     background-position: bottom;
     align-items: flex-end;
     justify-content:center ;
-    background-image:url('./imgss/度假村大门.jpg') ;
+    background-image:url('./度假村大门.jpg') ;
 }
 .header-content{
     margin-bottom: 150px;
@@ -150,7 +150,7 @@ p{
 .facility{
     width: 100%;
     height: 100vh;
-    background-image: url('./imgss/05.jpg');
+    background-image: url('./05.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
